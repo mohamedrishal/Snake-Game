@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #111;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.score{
+    color: #fff;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(20,30px);
+    grid-template-rows: repeat(20,30px);
+    gap: 0.8px;
+    width: max-content;
+}
+
+.cell{
+    background-color: #ffffff49;
+    width: 30px;
+    height: 30px;
+}
+
+.food{
+    background-color: rgb(10, 44, 5);
+}
+
+.snake{
+    background-color: rgb(18, 138, 38);
+}
+
+.snakeHead{
+    background-color: #165609;
+}
+
+
+.gameover{
+    position: absolute;
+    top: 50vh;
+    left: 77vh;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    background-color: #a9a6a6;
+}
